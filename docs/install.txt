@@ -1,0 +1,28 @@
+Install Laravel
+1. laravel new hhx
+2. composer require laravel/jetstream
+3. php artisan jetstream:install livewire
+4. npm install
+5. npm run dev
+6. php artisan serve
+
+Install Admin LTE
+1. composer require laravel/ui
+2. php artisan ui bootstrap --auth
+3. npm install
+4. npm run dev
+5. php artisan migrate
+6. npm install admin-lte@^3.2.0 --save
+7. Edit: C:\xampp\htdocs\hhx\resources\js\bootstrap.js
+	try {
+    		require('bootstrap');
+    		require('admin-lte');
+	} catch (e) {}
+8. Add: C:\xampp\htdocs\hhx\resources\sass\app.scss
+	//Admin-LTE
+	@import '~admin-lte/dist/css/adminlte.css';
+	@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+	@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+	@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+9. npm install --save @fortawesome/fontawesome-free
+10. 
